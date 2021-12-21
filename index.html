@@ -22,9 +22,52 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    We're coming soon Hello fellow shoppers! We're currently building our new
-    fashion store. Add your email below to stay up-to-date with announcements
-    and our launch deals. Email Address
+    <main class="intro">
+      <div class="intro__left">
+        <img
+          src="./images/logo.svg"
+          alt=""
+          class="intro__img logo"
+          aria-hidden="true"
+        />
+
+        <img class="intro__img mobile" src="./images/hero-mobile.jpg" alt="" />
+
+        <div class="intro__text">
+          <h1 class="intro__heading"><b>We're</b> coming soon</h1>
+          <p class="intro__paragraph">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form class="intro__form">
+            <div>
+              <input
+                type="text"
+                aria-placeholder="email address"
+                placeholder="Email Address"
+              />
+              <button class="intro__submit" role="submit">
+                <img
+                  src="./images/icon-arrow.svg"
+                  aria-hidden="true"
+                  class="intro__arrow"
+                  alt=""
+                />
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="intro__right">
+        <img
+          class="intro__img desktop"
+          src="./images/hero-desktop.jpg"
+          alt=""
+        />
+      </div>
+    </main>
 
     <script src="./src/script.js"></script>
   </body>

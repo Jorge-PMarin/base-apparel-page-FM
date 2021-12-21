@@ -1,0 +1,79 @@
+body {
+  min-height: 100vh;
+}
+
+.intro {
+  &__right {
+    display: none;
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+  }
+
+  &__img.logo {
+    height: 2.2rem;
+    box-sizing: initial;
+    padding: 2em;
+  }
+
+  &__text {
+    padding: 0 3rem;
+    text-align: center;
+  }
+
+  &__heading {
+    font-size: 4rem;
+    color: $dark-grayish-red;
+    text-transform: uppercase;
+    max-width: 25rem;
+    margin: 6rem auto 2rem auto;
+    letter-spacing: 0.2em;
+  }
+
+  &__heading b {
+    color: $desaturated-red;
+    font-weight: 200;
+  }
+
+  &__paragraph {
+    color: $desaturated-red;
+    font-size: 1.4rem;
+    line-height: 1.5em;
+    margin-bottom: 3rem;
+  }
+
+  &__form {
+    margin-bottom: 14rem;
+
+    div {
+      position: relative;
+    }
+
+    input {
+      width: 100%;
+      border-radius: 10rem;
+      padding: 1.2em 1.5em;
+      border: 0.1rem solid hsla(0, 21%, 76%, 0.774);
+      
+    }
+
+    input::placeholder {
+      color: $desaturated-red;
+      opacity: 50%;
+    }
+
+    button {
+      position: absolute;
+      height: 100%;
+      border-radius: 10rem;
+      padding: 0 2.6rem;
+      right: 0;
+      border: none;
+      box-shadow: -1px 18px 34px -7px $desaturated-red;
+      background-image: linear-gradient(#{$gradiant-desaturated-red});
+      cursor: pointer;
+    }
+  }
+}
